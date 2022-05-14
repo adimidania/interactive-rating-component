@@ -104,12 +104,20 @@ body {
     font-size: 15px;
 }
 
-#submit:hover, .buttons button:hover, .finished h3:hover {
+#submit:hover, .finished h3:hover {
     background-color: white;
     color: hsl(25, 97%, 53%);
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    cursor: pointer;  
 }
 
 .buttons button:focus{
