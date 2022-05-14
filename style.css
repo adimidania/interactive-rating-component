@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.finished {
+    display: none;
+}
+
+.card {
+    width: 320px;
+}
+
+.rating, .heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating {
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(213, 20%, 18%, 0.475);
+    border-radius: 20px;
+    padding: 25px 0 10px 0;
+}
+
+.heading h1 {
+    color: white;
+}
+
+.icon-start-container, .buttons button{
+    background-color: hsla(214, 19%, 24%, 0.499);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button, .content p, .finished p {
+    color:hsl(216, 12%, 54%);
+}
+
+#submit {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    padding: 12.5px 0px 12.5px 0;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.heading, #submit, .content, .buttons {
+    margin-bottom: 15px;
+    width: 270px;
+}
+
+.icon-start-container {
+    margin-bottom: 15px;
+}
+
+.heading h1 {
+    font-weight: 500;
+}
+
+.content p, .finished p {
+    line-height: 22.5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    text-align: left;
+}
+
+.finished p {
+    text-align: center;
+}
+.buttons button {
+    border: none;
+    font-size: 15px;
+}
+
+#submit:hover, .buttons button:hover, .finished h3:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.buttons button:focus{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.finished {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(213, 20%, 18%, 0.475);
+    border-radius: 20px;
+    padding: 25px 0 10px 0;
+}
+
+.finished img {
+    width:125px;
+    height:auto;
+}
+
+.finished h3 {
+    font-size: 15px;
+    font-weight: 400;
+    background-color: hsla(214, 19%, 24%, 0.499);
+    color: hsl(25, 97%, 53%);
+    padding:5px 10px;
+    border-radius: 27px;
+    cursor: pointer;
+}
+
+.finished h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color:white;
+}
+
+.finished img, .finished h1, .finished h3, .finished p {
+    margin-bottom: 15px;
+}
+
+.finished p {
+    width: 270px;
+}
+
+.finished {
+    display: none;
+}
+
+.error-msg {
+    font-size: 14px;
+    color:rgb(193, 0, 0);
+}
+
+.error-box {
+    display: none;
+}
+

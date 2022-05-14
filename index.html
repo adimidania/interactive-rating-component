@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" class="css">
+  <script src="script.js"></script>
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <div class="card">
+    <div class="rating">
+      <div class="heading">
+        <div class="icon-start-container">
+          <img src="images/icon-star.svg" alt="star icon" class="star-icon">
+        </div>
+        <h1>How did we do?</h1>
+      </div>
+      <div class="content">
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>
+      <div class="buttons">
+        <button class="button" data-value="1">1</button>
+        <button class="button" data-value="2">2</button>
+        <button class="button" data-value="3">3</button>
+        <button class="button" data-value="4">4</button>
+        <button class="button" data-value="5">5</button>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      <div class="error-box">
+        <p class="error-msg">Please check the rating before submitting</p>
+      </div>
+    </div>
+    <div class="finished">
+      <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
+      <h3 id="selected-result"></h3>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
