@@ -1,18 +1,16 @@
-var ratingBtns = document.querySelectorAll('.button')
-var submitBtn = document.querySelector('#submit')
-var cardBody = document.querySelector('.rating')
-var cardBodySubmitted = document.querySelector('.finished')
-var errorBox = document.querySelector('.error-box')
-var selectedValue = document.querySelector('#selected-result')
-var ratingValue = 0
+const ratingBtns = document.querySelectorAll('.button')
+const submitBtn = document.querySelector('#submit')
+const cardBody = document.querySelector('.rating')
+const cardBodySubmitted = document.querySelector('.finished')
+const errorBox = document.querySelector('.error-box')
+const selectedValue = document.querySelector('#selected-result')
+let ratingValue = 0
 
-var ratingSelect = (e) => {
-    console.log("I am here")
+const ratingSelect = (e) => {
     ratingValue = e.target.dataset.value
-    console.log(e.target.dataset.value)
 }
 
-var sumbitCheck = () => {
+const sumbitCheck = () => {
     if(ratingValue === 0){
         errorBox.style.display = 'block';
     } else {
@@ -26,11 +24,3 @@ ratingBtns.forEach(btn => btn.addEventListener('click', ratingSelect))
 if(submitBtn) {
     submitBtn.addEventListener('click', sumbitCheck)
 }
-
-/**
- * I am still a beginner at JavaScript, so Ill leave this here
- * maybe Ill get back to it later.
- * I got an error that says : "Uncaught SyntaxError: Identifier 'Buttons' has already been declared"
- * and I solved it by letting all my elements (ratingBtns etc) declared as var 
- * (P.S: they were const before).
- */
